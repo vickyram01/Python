@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2021-12-29 18:31:53</p>
+                <p class='attribute'><strong>Duration: </strong>16 ms</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 5, Pass: 0, Error: 5</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.NewBmcTestingClass</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_01__valid_login_bmc</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: 'msedgedriver.exe' executable needs to be in PATH. Please download from https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\service.py", line 71, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 966, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 1435, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\eclipse-workspace\Bluearmor Python\Tests\TCsNewBMC.py", line 33, in setUp
+    self.driver = newBmc_login.NewBmcLoginClass.open_url(config.url)
+  File "C:\Users\Admin\eclipse-workspace\Bluearmor Python\Pages\nw_BMC_login.py", line 46, in open_url
+    return cmnelem.open_url(loginurl)
+  File "C:\Users\Admin\eclipse-workspace\Bluearmor Python\CommonFns\elements.py", line 224, in open_url
+    driver = webdriver.Edge(r'C:\Users\ivc21078adm\driver\msedgedriver.exe')
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\edge\webdriver.py", line 62, in __init__
+    super(WebDriver, self).__init__(DesiredCapabilities.EDGE['browserName'], "ms",
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 90, in __init__
+    self.service.start()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'msedgedriver.exe' executable needs to be in PATH. Please download from https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_02__invalid_username_login_bmc</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: 'msedgedriver.exe' executable needs to be in PATH. Please download from https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\service.py", line 71, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 966, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 1435, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\eclipse-workspace\Bluearmor Python\Tests\TCsNewBMC.py", line 33, in setUp
+    self.driver = newBmc_login.NewBmcLoginClass.open_url(config.url)
+  File "C:\Users\Admin\eclipse-workspace\Bluearmor Python\Pages\nw_BMC_login.py", line 46, in open_url
+    return cmnelem.open_url(loginurl)
+  File "C:\Users\Admin\eclipse-workspace\Bluearmor Python\CommonFns\elements.py", line 224, in open_url
+    driver = webdriver.Edge(r'C:\Users\ivc21078adm\driver\msedgedriver.exe')
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\edge\webdriver.py", line 62, in __init__
+    super(WebDriver, self).__init__(DesiredCapabilities.EDGE['browserName'], "ms",
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 90, in __init__
+    self.service.start()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'msedgedriver.exe' executable needs to be in PATH. Please download from https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_03__invalid_pwd_login_bmc</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: 'msedgedriver.exe' executable needs to be in PATH. Please download from https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\service.py", line 71, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 966, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 1435, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\eclipse-workspace\Bluearmor Python\Tests\TCsNewBMC.py", line 33, in setUp
+    self.driver = newBmc_login.NewBmcLoginClass.open_url(config.url)
+  File "C:\Users\Admin\eclipse-workspace\Bluearmor Python\Pages\nw_BMC_login.py", line 46, in open_url
+    return cmnelem.open_url(loginurl)
+  File "C:\Users\Admin\eclipse-workspace\Bluearmor Python\CommonFns\elements.py", line 224, in open_url
+    driver = webdriver.Edge(r'C:\Users\ivc21078adm\driver\msedgedriver.exe')
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\edge\webdriver.py", line 62, in __init__
+    super(WebDriver, self).__init__(DesiredCapabilities.EDGE['browserName'], "ms",
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 90, in __init__
+    self.service.start()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'msedgedriver.exe' executable needs to be in PATH. Please download from https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_04__invalid_username_pwd_login_bmc</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: 'msedgedriver.exe' executable needs to be in PATH. Please download from https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\service.py", line 71, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 966, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 1435, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\eclipse-workspace\Bluearmor Python\Tests\TCsNewBMC.py", line 33, in setUp
+    self.driver = newBmc_login.NewBmcLoginClass.open_url(config.url)
+  File "C:\Users\Admin\eclipse-workspace\Bluearmor Python\Pages\nw_BMC_login.py", line 46, in open_url
+    return cmnelem.open_url(loginurl)
+  File "C:\Users\Admin\eclipse-workspace\Bluearmor Python\CommonFns\elements.py", line 224, in open_url
+    driver = webdriver.Edge(r'C:\Users\ivc21078adm\driver\msedgedriver.exe')
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\edge\webdriver.py", line 62, in __init__
+    super(WebDriver, self).__init__(DesiredCapabilities.EDGE['browserName'], "ms",
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 90, in __init__
+    self.service.start()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'msedgedriver.exe' executable needs to be in PATH. Please download from https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_05__logout_bmc</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: 'msedgedriver.exe' executable needs to be in PATH. Please download from https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\service.py", line 71, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 966, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 1435, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\eclipse-workspace\Bluearmor Python\Tests\TCsNewBMC.py", line 33, in setUp
+    self.driver = newBmc_login.NewBmcLoginClass.open_url(config.url)
+  File "C:\Users\Admin\eclipse-workspace\Bluearmor Python\Pages\nw_BMC_login.py", line 46, in open_url
+    return cmnelem.open_url(loginurl)
+  File "C:\Users\Admin\eclipse-workspace\Bluearmor Python\CommonFns\elements.py", line 224, in open_url
+    driver = webdriver.Edge(r'C:\Users\ivc21078adm\driver\msedgedriver.exe')
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\edge\webdriver.py", line 62, in __init__
+    super(WebDriver, self).__init__(DesiredCapabilities.EDGE['browserName'], "ms",
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 90, in __init__
+    self.service.start()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'msedgedriver.exe' executable needs to be in PATH. Please download from https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 5, Pass: 0, Error: 5 -- Duration: 16 ms
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
