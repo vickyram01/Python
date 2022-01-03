@@ -26,7 +26,7 @@ class  DriverManager():
         ROOT_PATH = str(Path(__file__).parent.parent)
         browser_name = config.browser
         if browser_name == "chrome":
-            self.driver = webdriver.Chrome(executable_path=ROOT_PATH + "/drivers\\chromedriver.exe")
+            self.driver = webdriver.Chrome(executable_path=ROOT_PATH + os.sep + "drivers" + os.sep + "chromedriver.exe")
         elif self.browser_name == "firefox":
             self.driver = webdriver.Firefox(executable_path=ROOT_PATH + "/drivers\\geckodriver.exe")
         elif self.browser_name == "ie":
